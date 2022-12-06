@@ -14,8 +14,6 @@ const getAdvice = async () => {
     }
 }
 
-getAdvice();
-
 function changeElements(json) {
     const advice = json.slip;
     
