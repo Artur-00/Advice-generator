@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    margin: 10% auto;
+    padding: 40px;
+    min-height: 330px;
+    width: 530px;
+    border-radius: 15px;
+    background-color: hsl(217, 19%, 24%);
+}
+
+.advice-id {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.9em;
+    color: hsl(150, 100%, 66%);
+}
+
+
+/* Advice */
+
+.advice {
+    text-align: center;
+    font-size: 1.7em;
+    margin-top: 25px;
+    color: hsl(193, 38%, 86%);
+    height: 100%;
+}
+
+.divider {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    bottom: 1em;
+    /* left: 50%; */
+    /* transform: translateX(-45%); */
+}
+
+
+/* Advice generator button */
+
+.button {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    bottom: -2.3em;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+.button-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: hsl(150, 100%, 66%);
+    transition: 0.2s;
+}
+
+.button-background img {
+    max-height: 20px;
+}
+
+.button-background:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+    transition: 0.2s;
+}
+
+
+/* Responsivity */
+
+@media only screen and (max-width: 550px) {
+
+    .container {
+        margin: 50px auto;
+        padding: 20px;
+        min-width: 300px;
+        max-width: 400px;
+        background-image: url('../images/pattern-divider-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 46% 85%;
+    }
+
+    .divider img {
+        display: none;
+    }
+}
+
